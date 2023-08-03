@@ -37,7 +37,6 @@ public class StudentService {
             throw new IllegalStateException(
                     "student with id " + id + " does not exists ");
         }
-
         studentRepository.deleteById(id);
     }
 
@@ -62,4 +61,6 @@ public class StudentService {
             studentModel.setEmail(email);
         }
     }
+
+
 }
